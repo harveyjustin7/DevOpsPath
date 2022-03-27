@@ -1492,20 +1492,49 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Willkommen bei DevOps</h4>",
+                            "value": "<h4>Willkommen Justin</h4>",
                             "newRow": true
                         },
                         {
                             "type": "button",
-                            "name": { default: "Studiengang" },
+                            "name": { default: "Deine Note im DevOps" },
                             "icon": "fa-file-alt",
                             "color": "wet-asphalt",
                             "page": "studyProgramPage",
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "Test neue breite Kachel" },
+                            "icon": "fa-file-alt",
+                            "color": "pink",
+                            "page": "modulePage",
+                            "width": 8,
+                            },
+                            
+                            {
+"id": "modulePage",
+"elementList": [
+{
+"type": "backbutton",
+},
+{
+"type": "newButton",
+"name": { default: "Neues Modul" },
+"icon": "fa-user",
+"color": "green",
+"width": 2,
+"form" : {
+"form" : "ModuleForm"
+}
+},
+]
+}
                     ]
+                    
                 },
+                
                 {
                     "id": "studyProgramPage",
                     "elementList": [
