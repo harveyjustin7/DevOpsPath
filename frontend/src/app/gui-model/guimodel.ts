@@ -1492,7 +1492,7 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Willkommen Justin</h4>",
+                            "value": "<h4>Willkommen Lukas!</h4>",
                             "newRow": true
                         },
                         {
@@ -1510,7 +1510,7 @@ export class GuiModel {
                             "icon": "fa-file-alt",
                             "color": "pink",
                             "page": "modulePage",
-                            "width": 8,
+                            "width": 9,
                             },
                             {
 "id": "modulePage",
