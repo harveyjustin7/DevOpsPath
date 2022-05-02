@@ -1512,7 +1512,6 @@ export class GuiModel {
                             "page": "modulePage",
                             "width": 8,
                             },
-                            
                             {
 "id": "modulePage",
 "elementList": [
@@ -1532,9 +1531,7 @@ export class GuiModel {
 ]
 }
                     ]
-                    
                 },
-                
                 {
                     "id": "studyProgramPage",
                     "elementList": [
