@@ -17,8 +17,8 @@ public class FizzBuzzConverterTest {
     public void fizzBuzzConvertor2() {
 
         FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
-        Assert.assertEquals("2", fizzBuzz.convert(2));
-
+        Assert.assertEquals("2", fizzBuzz.convert(3));
+// change back to 2
     }
 
     @Test
