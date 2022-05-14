@@ -46,7 +46,7 @@ public class FizzBuzzConverterTest {
     }
 
     @Test
-    public void fizzBuzzConvertorMultiplesOfSeven() {
+    public void fizzBuzzConvertorMultiplesOfSeven2() {
 
         FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
 
