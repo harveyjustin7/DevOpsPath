@@ -131,6 +131,84 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "TestForm",
+                    "title": "Test",
+                    "url": "/test",
+                    "formFieldList": [
+                        {
+                            "id":   "lastName",
+                            "type": "text",
+                            "name": "FamilyName",
+                            "newRow": true,
+                            "required": true
+                        },
+                        {
+                            "id":   "firstName",
+                            "type": "text",
+                            "name": "FirstName",
+                            "required": true
+                        },
+                        {
+                            "id":   "email",
+                            "type": "text",
+                            "name": "EMail",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "id":   "password",
+                            "type": "text",
+                            "name": "Password",
+                            "newRow": true,
+                            "width": 2,
+                            "isPassword": true,
+                            "required": true
+                        },
+                        {
+                            "id":   "repeatPassword",
+                            "type": "text",
+                            "name": "RepeatPassword",
+                            "newRow": true,
+                            "width": 2,
+                            "isPassword": true,
+                            "required": true
+                        },
+                        {
+                            "id": "evtCreationDate",
+                            "type": "date",
+                            "name": "CreationDate",
+                            "required": true,
+                            "newRow": true
+                        },
+                        {
+                            "id": "evtClosingDate",
+                            "type": "date",
+                            "name": "ClosingDate"
+                        },
+                        {
+                            "id": "comments",
+                            "type": "text",
+                            "name": "Comments",
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "StudyProgramForm",
                     "title": "StudyProgram",
                     "url": "/studyProgram",
@@ -1492,7 +1570,7 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Willkommen Justin!</h4>",
+                            "value": "<h4>Willkommen Philip!</h4>",
                             "newRow": true
                         },
                         {
@@ -1506,12 +1584,29 @@ export class GuiModel {
                         },
                         {
                             "type": "button",
+                            "name": { default: "Deine Module" },
+                            "icon": "fa-file-alt",
+                            "color": "dry-asphalt",
+                            "page": "studyProgramPage",
+                            "width": 23,
+                            "newRow": false,
+                        },
+                        {
+                            "type": "button",
                             "name": { default: "Test neue breite Kachel" },
                             "icon": "fa-file-alt",
                             "color": "pink",
-                            "page": "modulePage",
+                            "page": "TestPage",
                             "width": 9,
                             },
+                            {
+                                "type": "button",
+                                "name": { default: "Zweite neue Kachel" },
+                                "icon": "fa-file-alt",
+                                "color": "red",
+                                "page": "TestPage",
+                                "width": 6,
+                                },
                             {
 "id": "modulePage",
 "elementList": [
@@ -1529,7 +1624,25 @@ export class GuiModel {
 }
 },
 ]
-}
+},
+{
+    "id": "TestPage",
+    "elementList": [
+    {
+    "type": "backbutton",
+    },
+    {
+    "type": "newButton",
+    "name": { default: "Test Button" },
+    "icon": "fa-user",
+    "color": "red",
+    "width": 3,
+    "form" : {
+    "form" : "TestForm"
+    }
+    },
+    ]
+    }
                     ]
                 },
                 {
