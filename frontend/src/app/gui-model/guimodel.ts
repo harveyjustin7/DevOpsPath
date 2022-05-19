@@ -1492,7 +1492,7 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Willkommen Philip!</h4>",
+
                             "newRow": true
                         },
                         {
