@@ -1570,7 +1570,11 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
+<<<<<<< HEAD
                             "value": "<h4>Willkommen Philip!</h4>",
+=======
+
+>>>>>>> af4b500386027eacbd32d461771418841122f113
                             "newRow": true
                         },
                         {
@@ -1584,12 +1588,21 @@ export class GuiModel {
                         },
                         {
                             "type": "button",
+<<<<<<< HEAD
                             "name": { default: "Deine Module" },
                             "icon": "fa-file-alt",
                             "color": "dry-asphalt",
                             "page": "studyProgramPage",
                             "width": 23,
                             "newRow": false,
+=======
+                            "name": { default: "Neuer Button" },
+                            "icon": "fa-file-alt",
+                            "color": "wet-asphalt",
+                            "page": "studyProgramPage",
+                            "width": 2,
+                            "newRow": true,
+>>>>>>> af4b500386027eacbd32d461771418841122f113
                         },
                         {
                             "type": "button",
@@ -1601,11 +1614,19 @@ export class GuiModel {
                             },
                             {
                                 "type": "button",
+<<<<<<< HEAD
                                 "name": { default: "Zweite neue Kachel" },
                                 "icon": "fa-file-alt",
                                 "color": "red",
                                 "page": "TestPage",
                                 "width": 6,
+=======
+                                "name": { default: "Test neue breite Kachel 2" },
+                                "icon": "fa-file-alt",
+                                "color": "red",
+                                "page": "modulePage",
+                                "width": 15,
+>>>>>>> af4b500386027eacbd32d461771418841122f113
                                 },
                             {
 "id": "modulePage",

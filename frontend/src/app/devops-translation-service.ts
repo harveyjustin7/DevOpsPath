@@ -117,7 +117,7 @@ export class DevOpsTranslationService extends TranslationService {
             "Ok": "OK",
             "Result": "Resultat",
             "Results": "Resultate",
-            "Search": "Suche",
+            "Search": "Search",
             "SearchInputLabel": "Suchbegriff",
             "SearchTextTooShort": "Suchbegriff zu kurz",
             "SignedInAs": "Angemeldet als",
