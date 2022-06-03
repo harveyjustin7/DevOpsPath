@@ -131,6 +131,84 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "TestForm",
+                    "title": "Test",
+                    "url": "/test",
+                    "formFieldList": [
+                        {
+                            "id":   "lastName",
+                            "type": "text",
+                            "name": "FamilyName",
+                            "newRow": true,
+                            "required": true
+                        },
+                        {
+                            "id":   "firstName",
+                            "type": "text",
+                            "name": "FirstName",
+                            "required": true
+                        },
+                        {
+                            "id":   "email",
+                            "type": "text",
+                            "name": "EMail",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "id":   "password",
+                            "type": "text",
+                            "name": "Password",
+                            "newRow": true,
+                            "width": 2,
+                            "isPassword": true,
+                            "required": true
+                        },
+                        {
+                            "id":   "repeatPassword",
+                            "type": "text",
+                            "name": "RepeatPassword",
+                            "newRow": true,
+                            "width": 2,
+                            "isPassword": true,
+                            "required": true
+                        },
+                        {
+                            "id": "evtCreationDate",
+                            "type": "date",
+                            "name": "CreationDate",
+                            "required": true,
+                            "newRow": true
+                        },
+                        {
+                            "id": "evtClosingDate",
+                            "type": "date",
+                            "name": "ClosingDate"
+                        },
+                        {
+                            "id": "comments",
+                            "type": "text",
+                            "name": "Comments",
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "StudyProgramForm",
                     "title": "StudyProgram",
                     "url": "/studyProgram",
@@ -1492,18 +1570,104 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
+<<<<<<< HEAD
                             "value": "<h4>Hallo Philip</h4>",
+=======
+<<<<<<< HEAD
+                            "value": "<h4>Willkommen Philip!</h4>",
+=======
+
+>>>>>>> af4b500386027eacbd32d461771418841122f113
+>>>>>>> 498c5b86cb492f24e61630b07f0e065a5c602d5d
                             "newRow": true
                         },
                         {
                             "type": "button",
-                            "name": { default: "Studiengang" },
+                            "name": { default: "Deine Note im DevOps" },
                             "icon": "fa-file-alt",
                             "color": "wet-asphalt",
                             "page": "studyProgramPage",
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+<<<<<<< HEAD
+                            "name": { default: "Deine Module" },
+                            "icon": "fa-file-alt",
+                            "color": "dry-asphalt",
+                            "page": "studyProgramPage",
+                            "width": 23,
+                            "newRow": false,
+=======
+                            "name": { default: "Neuer Button" },
+                            "icon": "fa-file-alt",
+                            "color": "wet-asphalt",
+                            "page": "studyProgramPage",
+                            "width": 2,
+                            "newRow": true,
+>>>>>>> af4b500386027eacbd32d461771418841122f113
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Test neue breite Kachel" },
+                            "icon": "fa-file-alt",
+                            "color": "pink",
+                            "page": "TestPage",
+                            "width": 9,
+                            },
+                            {
+                                "type": "button",
+<<<<<<< HEAD
+                                "name": { default: "Zweite neue Kachel" },
+                                "icon": "fa-file-alt",
+                                "color": "red",
+                                "page": "TestPage",
+                                "width": 6,
+=======
+                                "name": { default: "Test neue breite Kachel 2" },
+                                "icon": "fa-file-alt",
+                                "color": "red",
+                                "page": "modulePage",
+                                "width": 15,
+>>>>>>> af4b500386027eacbd32d461771418841122f113
+                                },
+                            {
+"id": "modulePage",
+"elementList": [
+{
+"type": "backbutton",
+},
+{
+"type": "newButton",
+"name": { default: "Neues Modul" },
+"icon": "fa-user",
+"color": "green",
+"width": 2,
+"form" : {
+"form" : "ModuleForm"
+}
+},
+]
+},
+{
+    "id": "TestPage",
+    "elementList": [
+    {
+    "type": "backbutton",
+    },
+    {
+    "type": "newButton",
+    "name": { default: "Test Button" },
+    "icon": "fa-user",
+    "color": "red",
+    "width": 3,
+    "form" : {
+    "form" : "TestForm"
+    }
+    },
+    ]
+    }
                     ]
                 },
                 {
