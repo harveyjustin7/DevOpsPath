@@ -166,6 +166,41 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "persönlicheDatenForm",
+                    "title": "persönlicheDaten",
+                    "url": "/persönlicheDaten",
+                    "formFieldList": [
+                        {
+                            "id":   "name",
+                            "type": "text",
+                            "name": "Name",
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id": "Geburtsdatum",
+                            "type": "text",
+                            "name": "Geburtsdatum",
+                            "newRow": true,
+                            "maxLength": 10,
+                            "height": 2,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "PatientForm",
                     "title": "Patient",
                     "url": "/patient",
@@ -1504,6 +1539,15 @@ export class GuiModel {
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "Persönliche Daten"},
+                            "icon": "fa-solid fa-battery-empty",
+                            "color": "red"
+                            "page": "persönlicheDaten",
+                            "width": 2,
+                            "newRow": false,
+                        }
                     ]
                 },
                 {
@@ -1535,6 +1579,24 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "persönlicheDaten",
+                    "elementList": [
+                    {
+                    "type": "backbutton",
+                    },
+                    {
+                    "type": "newButton",
+                    "name": { default: "Neuer Eintrag" },
+                    "icon": "fa-user",
+                    "color": "blue",
+                    "width": 2,
+                    "form" : {
+                    "form" : "persönlicheDatenForm"
+                    }
+                    },
+                    ]
+                    }
                 {
                     "id": "patientsPage",
                     "elementList": [
