@@ -1492,12 +1492,12 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Willkommen Justin!</h4>",
+                            "value": "<h4>Willkommen Philip!</h4>",
                             "newRow": true
                         },
                         {
                             "type": "button",
-                            "name": { default: "Deine Note im DevOps" },
+                            "name": { default: "Ein anderer Name" },
                             "icon": "fa-file-alt",
                             "color": "wet-asphalt",
                             "page": "studyProgramPage",
@@ -1506,11 +1506,11 @@ export class GuiModel {
                         },
                         {
                             "type": "button",
-                            "name": { default: "Test neue breite Kachel" },
+                            "name": { default: "breitere Kachel" },
                             "icon": "fa-file-alt",
-                            "color": "pink",
+                            "color": "blue",
                             "page": "modulePage",
-                            "width": 9,
+                            "width": 8,
                             },
                             {
 "id": "modulePage",
