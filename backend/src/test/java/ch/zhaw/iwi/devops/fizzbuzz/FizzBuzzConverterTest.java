@@ -43,6 +43,7 @@ public class FizzBuzzConverterTest {
         FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
 
         Assert.assertEquals("Buzz", fizzBuzz.convert(7));
+        Assert.assertEquals("Buzz", fizzBuzz.convert(77));
     }
 
     @Test
